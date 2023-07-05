@@ -11,6 +11,7 @@ SceneBase {
     // signal indicating that the creditsScene should be displayed
     signal makeLevelPressed
 
+
     // background
     Image {
         id: menu_bg
@@ -32,14 +33,14 @@ SceneBase {
         MenuButton {
             text: "PlayGame"
             color: "white"
-            onClicked: playPressed()
+            tap.onTapped: playPressed()
             opacity: 0.9
 
         }
         MenuButton {
             text: "MakeLevel"
             color: "white"
-            onClicked: makeLevelPressed()
+            tap.onTapped: makeLevelPressed()
             opacity:0.9
         }
     }

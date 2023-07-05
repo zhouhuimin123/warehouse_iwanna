@@ -48,7 +48,7 @@ Scene {
             gravity: Qt.point(0, 25)
             z: 1000
 
-            debugDrawVisible: true
+            debugDrawVisible: false
 
             Map1{
                 id:map
@@ -72,11 +72,11 @@ Scene {
                 player.y = 100
               }
               // this is just for you to see how the sensor moves, in your real game, you should position it lower, outside of the visible area
-              Rectangle {
-                anchors.fill: parent
-                color: "yellow"
-                opacity: 0.5
-              }
+//              Rectangle {
+//                anchors.fill: parent
+//                color: "yellow"
+//                opacity: 0.5
+//              }
             }
         }
     }

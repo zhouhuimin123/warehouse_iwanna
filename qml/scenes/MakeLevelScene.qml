@@ -25,7 +25,7 @@ SceneBase {
         anchors.rightMargin: 10
         anchors.top: makeLevelScene.gameWindowAnchorItem.top
         anchors.topMargin: 10
-        onClicked: backButtonPressed()
+        tap.onTapped: backButtonPressed()
     }
 
     Row{
